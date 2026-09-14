@@ -8,7 +8,7 @@ function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5">
 
         <h1 className="text-2xl font-bold">
-          Movie Search
+         🍿 CineFind
         </h1>
 
         {/* Desktop Menu */}

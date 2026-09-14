@@ -124,7 +124,7 @@ function App() {
           element={
             <main>
               <h2 className="mt-10 text-center text-4xl font-bold">
-                Movie Search App
+                Discover movies you'll love.
               </h2>
 
               <SearchBar onSearch={handleSearch} />
