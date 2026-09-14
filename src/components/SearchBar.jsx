@@ -5,14 +5,13 @@ function SearchBar({ onSearch }) {
 
   function handleSubmit(event) {
     event.preventDefault();
-
     onSearch(query);
   }
 
   return (
     <form
       onSubmit={handleSubmit}
-      className="mx-auto mt-8 flex max-w-2xl gap-3 px-4"
+      className="mx-auto mt-8 flex w-full max-w-2xl flex-col gap-3 px-4 sm:flex-row"
     >
       <input
         type="text"
@@ -22,12 +21,12 @@ function SearchBar({ onSearch }) {
           onSearch(event.target.value);
         }}
         placeholder="Search for a movie..."
-        className="flex-1 rounded-md border border-gray-300 bg-white px-4 py-3 outline-none focus:border-red-500"
+        className="w-full min-w-0 rounded-md border border-gray-300 bg-white px-4 py-3 outline-none focus:border-red-500"
       />
 
       <button
         type="submit"
-        className="rounded-md bg-red-600 px-6 py-3 font-semibold text-white hover:bg-red-700"
+        className="w-full rounded-md bg-red-600 px-6 py-3 font-semibold text-white hover:bg-red-700 sm:w-auto"
       >
         Search
       </button>
